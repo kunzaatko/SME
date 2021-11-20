@@ -21,6 +21,8 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tabularray}
 \usepackage{tikz}
+\usetikzlibrary{external}
+\tikzexternalize
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
@@ -81,7 +83,7 @@ Tedy zavedeme dvě hypotézy, které je třeba v následujících částech otes
 \end{hypothesis}
 \begin{hypothesis}[Velikost 12 palců]
 	\label{hyp:velikost_12_palcu}
-	Velké pizzy od firmy \emph{Eagle Boys} mají $12$ palců ($30{,}48$ centimetrů) v průměru.
+	Velké pizzy od firmy \emph{Eagle Boys} mají nejméně $12$ palců ($30{,}48$ centimetrů) v průměru.
 \end{hypothesis}
 
 \subsection{Podoba dat}%
@@ -297,7 +299,7 @@ Ověřili jsme tedy, že není důvod považovat \emph{firmy}, \emph{přísady} 
 			hspan=minimal,
 			vspan=minimal,
 		}
-        & & \multicolumn{5}{|c|}{\emph{statistika}} \\
+		& & \multicolumn{5}{|c|}{\emph{statistika}} \\
 		& & \color{RedOrange} \textbf{$\bar{D}$} & \color{RedOrange} \textbf{$s_{D}$} & \color{RedOrange} \textbf{$\widetilde{D}$} & \color{RedOrange} \textbf{$\max(D)$} & \color{RedOrange} \textbf{$\min(D)$} \\
 		\multirow{3}{1em}{\rotatebox{90}{\emph{kůrka}}}  &
 		\color{TealBlue} \textbf{Deepan} &
@@ -347,7 +349,7 @@ Nyní pro \emph{přísady}.
 			hspan=minimal,
 			vspan=minimal,
 		}
-        & & \multicolumn{5}{|c|}{\emph{statistika}} \\
+		& & \multicolumn{5}{|c|}{\emph{statistika}} \\
 		& & \color{RedOrange} \textbf{$\bar{D}$} & \color{RedOrange} \textbf{$s_{D}$} & \color{RedOrange} \textbf{$\widetilde{D}$} & \color{RedOrange} \textbf{$\max(D)$} & \color{RedOrange} \textbf{$\min(D)$} \\
 
 		\multirow{3}{1em}{\rotatebox{90}{\emph{přísada}}}  &
