@@ -21,6 +21,7 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tabularray}
 \usepackage{tikz}
+
 \usetikzlibrary{external}
 \tikzexternalize
 
@@ -56,8 +57,11 @@
 
 \newcommand\E{\ensuremath{\mathbb{E}}}
 \newcommand\D{\ensuremath{\mathrm{D}}}
+\renewcommand\P{\ensuremath{\mathbb{P}}}
 \newtheorem*{note}{\textsl{Note:}}
 \newtheorem{hypothesis}{\textsl{Hypotéza}}
+
+\parskip=5pt
 
 \title{Pizzové řetězce v Austrálii}
 \author{Martin Kunz}
@@ -75,22 +79,6 @@ Analyzovaná data jsou z marketingové kampaně firmy \emph{Eagle Boys Pizzas}, 
 	\item velké pizzy od firmy \emph{Eagle Boys} jsou větší, než velké pizzy od firmy \emph{Domino's}
 	\item velké pizzy od firmy \emph{Eagle Boys} mají $12$ palců v průměru
 \end{enumerate}
-
-Tedy zavedeme dvě hypotézy, které je třeba v následujících částech otestovat:
-\begin{hypothesis}[Nerovnost mezi velikostmi pizz firem]
-	\label{hyp:nerovnost_mezi_velikostmi_pizz_firem}
-	Velké pizzy od firmy \emph{Eagle Boys} jsou větší, než velké pizzy od firmy \emph{Domino's}
-	\[
-		\E [D_{\text{\emph{EagleBoys}}}] > \E [D_{\text{\emph{Domino's}}}].
-	\]
-\end{hypothesis}
-\begin{hypothesis}[Velikost 12 palců]
-	\label{hyp:velikost_12_palcu}
-	Velké pizzy od firmy \emph{Eagle Boys} mají nejméně $12$ palců ($30{,}48$ centimetrů) v průměru
-	\[
-		\E [D_{\text{\emph{EagleBoys}}}] \ge \SI{30.48}{\cm}.
-	\]
-\end{hypothesis}
 
 \subsection{Podoba dat}%
 \label{sub:podoba_dat}
@@ -124,15 +112,56 @@ Máme $250$ pozorování velikostí pizz, přičemž z toho $125$ pozorování j
 	\caption{Kategorie pizz jednotlivých firem, které jsou zastoupeny v datech}
 \end{table}
 
+V následujících částech si označíme diskrétní náhodnou veličinu firmy jako $S$ (\emph{store}), která má dvouprvkový definiční obor $\left\{ \text{EagleBoys}, \text{Dominos} \right\} = \Omega_{S} $. Podobně si označíme $C$ (\emph{crust}),  $T$ (\emph{topping}) a $D$ (\emph{diameter}).
+
+Pro potřeby srovnání sjednotíme typy kůrek a přísad, které jsou pro firmy unikátní, v částech, kde se zabýváme oběma firmami současně. Budeme považovat \emph{ClassicCrust} a \emph{MidCrust} za ekvivalentní názvy stejného druhu kůrky a budeme typ kůrky označovat jako \emph{Mid} ($\text{\emph{Mid}} ,\text{\emph{ClassicCrust}} ,\text{\emph{MidCrust}} \in \Omega_{C}, \text{\emph{Mid}} \equiv \text{\emph{ClassicCrust}} \equiv \text{\emph{MidCrust}}$). Podobně \emph{ThinCrust} $\equiv$ \emph{ThinNCrispy} označíme názvem \emph{Thin}. U přísad sjednotíme \emph{SuperSupremo} a \emph{Supreme} pod společný druh přísad, kterému dáme název \emph{Supreme}.
+
+S tímto formalizmem si zavedeme dvě elementární hypotézy odpovídající zásadním tvrzením kampaně, které je třeba v následujících částech otestovat:
+\begin{hypothesis}[Nerovnost mezi velikostmi pizz firem]
+	\label{hyp:nerovnost_mezi_velikostmi_pizz_firem}
+	Velké pizzy od firmy \emph{Eagle Boys} jsou větší, než velké pizzy od firmy \emph{Domino's}
+	\[
+		H_0: \quad \E [D \mid S = \text{\emph{EagleBoys}}] > \E [D \mid S = \text{\emph{Domino's}}].
+	\]
+
+\end{hypothesis}
+\begin{hypothesis}[Velikost 12 palců]
+	\label{hyp:velikost_12_palcu}
+	Velké pizzy od firmy \emph{Eagle Boys} mají nejméně $12$ palců ($30{,}48$ centimetrů) v průměru
+	\[
+		H_0: \quad \E [D \mid S = \text{\emph{EagleBoys}}] \ge \SI{30.48}{\cm}.
+	\]
+\end{hypothesis}
+
+
 \section{Deskriptivní statistika}%
 \label{sec:deskriptivní_statistika}
 
 Uděláme nejprve základní analýzu dat z kampaně, abychom věděli jakými hypotézami se má smysl zabývat, kromě dvou zadaných hypotéz.
+\pagebreak
 
-\subsection{Kontinčenční tabulky kategorií druhu pizzy}%
-\label{sub:kontinčenční_tabulky_kategorii_druhu_pizzy}
+\subsection{Kontingenční tabulky}%
+\label{sub:kontingencni_tabulky}
+Podíváme se na četnosti zastoupení jednotlivých kategorií pizz v nasbíraných datech v kontingenčních tabulkách.
 
-Podíváme se na četnosti zastoupení jednotlivých kategorií pizz v nasbíraných datech v kontingenčních tabulkách. Nejprve jednotlivě pro firmy a obě kategorie druhu pizz, abychom ověřili, jestli určité typy kůrky určují preferenci určité přísady a naopak.
+\subsubsection{Kontingenční tabulky kategorií druhu pizzy}%
+\label{ssub:kontingencní_tabulky_kategorii_druhu_pizzy}
+
+Nejprve jednotlivě pro firmy a obě kategorie druhu pizz, abychom ověřili, jestli určité typy kůrky určují preferenci určité přísady a naopak. Tedy testujeme hypotézy nezávislosti $C \mid S$ a $T \mid S$ pro $S \in \left\{ \text{\emph{EagleBoys}}, \text{ \emph{Domino's}} \right\} $. Formálně
+\begin{hypothesis}[Nezávislost kůrky a přísad pro firmu \emph{EagleBoys}]
+	\label{hyp:nezavislost_kategorii_eagle}
+	Výběr kůrky je nezávislý na výběru přísady pro pizzy od firmy \emph{EagleBoys}
+	\[
+		H_0: \quad \forall c \in \Omega_C, \forall t \in \Omega_T: \quad \P[C = c,T = t \mid S = \text{\emph{EagleBoys}}] = \P[C = c \mid S = \text{\emph{EagleBoys}}]  \cdot \P[T = t \mid S = \text{\emph{EagleBoys}}]
+		.\]
+\end{hypothesis}
+\begin{hypothesis}[Nezávislost kůrky a přísad pro firmu \emph{Domino's}]
+	\label{hyp:nezavislost_kategorii_dominos}
+	Výběr kůrky  je nezávislý na výběru přísady pro pizzy od firmy \emph{Domino's}
+	\[
+		H_0: \quad \forall c \in \Omega_C, \forall t \in \Omega_T: \quad \P[C = c,T = t \mid S = \text{\emph{Domino's}}] = \P[C = c \mid S = \text{\emph{Domino's}}]  \cdot \P[T = t \mid S = \text{\emph{Domino's}}]
+		.\]
+\end{hypothesis}
 
 \begin{table}[H]
 	\centering
@@ -211,14 +240,48 @@ Podíváme se na četnosti zastoupení jednotlivých kategorií pizz v nasbíran
 	\caption{Četnosti typu kůrky a přísad pro \emph{Domino's}}
 \end{table}
 
-Vidíme, že v polích nejsou významné výkyvy, tedy, nemáme důvod předpokládat, že typ kůrky ovlivňuje výběr přísad a naopak. Výběry typu kůrky a typu přísad považujeme za nezávislé.
-\smallskip
+Vidíme, že v polích nejsou významné výkyvy, tedy, nemáme důvod předpokládat, že typ kůrky ovlivňuje výběr přísad a naopak.
 
+Pro potvrzení této intuice použijeme \emph{Pearsonův chí-kvadrát} test nezávislosti s $\alpha = 5\%$.
 
-Pro potřeby srovnání sjednotíme typy kůrek a přísad pro obě firmy v částech, kde se zabýváme oběma firmami současně. Budeme považovat \emph{ClassicCrust} a \emph{MidCrust} za ekvivalentní názvy stejného druhu kůrky (\emph{ClassicCrust} $\equiv$ \emph{MidCrust}) a budeme typ kůrky označovat jako \emph{Mid}. Podobně \emph{ThinCrust} $\equiv$ \emph{ThinNCrispy} označíme názvem \emph{Thin}. U přísad sjednotíme \emph{SuperSupremo} a \emph{Supreme} pod společný druh přísad, kterému dáme název \emph{Supreme}.
-\smallskip
+\begin{table}[H]
+	\centering
+	\begin{tblr}{
+			colspec={cccc},
+			rowspec={cccc},
+			hline{2-3}={3-Z}{1pt, solid},
+			vline{3-Z}={2}{1pt, solid},
+			hline{3-Z}={2}{1pt, solid},
+			vline{2-3}={3-Z}{1pt, solid},
+			vspan=even
+		}
+		& & \multicolumn{2}{|c|}{\emph{test}} \\
+		& & \color{Purple} \textbf{$H_{0}$} & \color{Purple} \textbf{$p_{\text{val}}$} \\
+		\multirow{2}{1em}{\rotatebox{90}{\emph{hypotéza}}}  &
+		\color{YellowOrange}{ \textbf{\ref{hyp:nezavislost_kategorii_eagle}}}
+		& \SetCell{Green} nezamítáme &\SetCell{Green} $95{,}09\%$ \\
+		& \color{YellowOrange}{ \textbf{\ref{hyp:nezavislost_kategorii_dominos}}}
+		&\SetCell{Green} nezamítáme &\SetCell{Green} $99{,}64\%$ \\
+	\end{tblr}
+	\caption{\emph{Pearsonův chí-kvadrát} test nezávislosti kategorií}
+\end{table}
 
-Podíváme se nyní ještě jaký má výběr firmy, ve které pizzu objednáváme, vliv na druh pizzy. Tedy na kontingenční tabulky pro firmy a každou z přísad zvlášť. Nejprve pro typy kůrky.
+Výběry typu kůrky a typu přísad budeme tedy považovat za nezávislé protože \emph{Pearsonův chí-kvadrát} test nezávislost nezamítl.
+
+\subsubsection{Kontingenční tabulky kategorie druhu pizzy a firmy}%
+\label{ssub:kontingencni_tabulky_kategorie_druhu_pizzy_a_firmy}
+
+Podíváme se nyní ještě jaký má výběr firmy, ve které pizzu objednáme, vliv na druh pizzy. Tedy na kontingenční tabulky pro firmy a každou z kategorií zvlášť.
+
+Nejprve pro typy kůrky. Stejně jako v předchozím případě budeme ověřovat nezávislost $C \mid S = \text{\emph{EagleBoys}}$ a $C \mid S = \text{\emph{Domino's}}$. Toto je ekvivalentí s homogenitou rozdělení typu kůrky v subpopulacích podle firmy. Ověřovat budeme hypotézu:
+
+\begin{hypothesis}[Homogenita typu kůrky podle firmy]
+	\label{hyp:homogenita_kurky}
+	Rozdělení typu kůrky v subpopulacích podle firmy je homogenní
+	\[
+		H_0: \quad \forall c \in \Omega_C: \quad \P[C = c \mid S = \text{\emph{EagleBoys}}] = \P[C = c \mid S = \text{\emph{Domino's}}].
+	\]
+\end{hypothesis}
 
 \begin{table}[H]
 	\centering
@@ -251,7 +314,18 @@ Podíváme se nyní ještě jaký má výběr firmy, ve které pizzu objednává
 	\caption{Četnosti typů kůrek pro obě firmy}
 \end{table}
 
-A pro typy přísad.
+Rozdíly tu nejsou nijak výrazné a tedy není důvod předpokládat závislost, tj. neplatnost \ref{hyp:homogenita_kurky}.
+
+A pro typy přísad nás analogicky zajímá nezávislost $T \mid S = \text{\emph{EagleBoys}}$ a $T \mid S = \text{\emph{Domino's}}$. Odpovídající hypotéza je:
+
+\begin{hypothesis}[Homogenita typu přísady podle firmy]
+	\label{hyp:homogenita_prisad}
+	Rozdělení typu přísady v subpopulacích podle firmy je homogenní
+	\[
+		H_0: \quad \forall t \in \Omega_T: \quad \P[T = t \mid S = \text{\emph{EagleBoys}}] = \P[T = t \mid S = \text{\emph{Domino's}}].
+	\]
+\end{hypothesis}
+
 \begin{table}[H]
 	\centering
 	\begin{tblr}{
@@ -283,7 +357,32 @@ A pro typy přísad.
 	\caption{Četnosti typů přísad pro obě firmy}
 \end{table}
 
-Ani tady nemáme tedy důvod předpokládat závislost výběru firmy na výběru druhu (\emph{kůrky} a \emph{přísad}) pizzy.
+Ani tady nemáme tedy důvod předpokládat závislost.
+
+Pro ověření opět používáme \emph{Pearsonův chí-kvadrát} test s $\alpha = 5\%$.
+\begin{table}[H]
+	\centering
+	\begin{tblr}{
+			colspec={cccc},
+			rowspec={cccc},
+			hline{2-3}={3-Z}{1pt, solid},
+			vline{3-Z}={2}{1pt, solid},
+			hline{3-Z}={2}{1pt, solid},
+			vline{2-3}={3-Z}{1pt, solid},
+			vspan=even
+		}
+		& & \multicolumn{2}{|c|}{\emph{test}} \\
+		& & \color{Purple} \textbf{$H_{0}$} & \color{Purple} \textbf{$p_{\text{val}}$} \\
+		\multirow{2}{1em}{\rotatebox{90}{\emph{hypotéza}}}  &
+		\color{YellowOrange}{ \textbf{\ref{hyp:homogenita_kurky}}}
+		& \SetCell{Green} nezamítáme &\SetCell{Green} $85{,}41\%$ \\
+		& \color{YellowOrange}{ \textbf{\ref{hyp:homogenita_prisad}}}
+		&\SetCell{Green} nezamítáme &\SetCell{Green} $96{,}48\%$ \\
+	\end{tblr}
+	\caption{\emph{Pearsonův chí-kvadrát} test homogenity rozdělení kategorií v subpopulacích podle firmy}
+\end{table}
+
+Stejně jako v předchozím případě jsme dospěli k nezávislosti.
 
 \subsection{Základní statistiky velikosti pizzy}%
 \label{sub:základní_statistiky_velikosti_pizzy}
@@ -339,7 +438,7 @@ Ze statistického průměru a směrodatné odchylky můžeme usoudit, že dalš�
 	\label{hyp:nerovnost_mezi_thincrust_a_midcrust}
 	Pizzy od firmy \emph{Eagle Boys Pizzas} s kůrkou typu \emph{ThinCrust} jsou větší než pizzy s kůrkou typu \emph{MidCrust}
 	\[
-		\E\left[D_{\text{\emph{EagleBoys}}} \mid C = \text{\emph{ThinCrust}} \right] > \E\left[ D_{\text{\emph{EagleBoys}}} \mid C = \text{\emph{MidCrust}}\right].
+		H_0: \quad\E\left[D_{\text{\emph{EagleBoys}}} \mid C = \text{\emph{ThinCrust}} \right] > \E\left[ D_{\text{\emph{EagleBoys}}} \mid C = \text{\emph{MidCrust}}\right].
 	\]
 \end{hypothesis}
 
@@ -388,7 +487,6 @@ Nyní pro \emph{přísady}.
 \end{table}
 
 Na rozdíl od statistik podle typu kůrky jsou zde rozdíly ve statistických průměrech malé. Naopak směrodatné odchylky jsou v porovnání se směrodatnými odchylkami podmíněnými typy kůrek větší a tudíž můžeme usoudit, že velikosti pizz jsou více ovlivněné volbou kůrky než volbou přísad.
-\smallskip
 
 A pro pizzy od firmy \emph{Domino's}.
 
@@ -438,7 +536,7 @@ Ze statistického průměru a směrodatné odchylky můžeme podobně jako výš
 	\label{hyp:nerovnost_mezi_thinncrispy_a_clasiccrust}
 	Pizzy od firmy \emph{Domino's} s kůrkou typu \emph{ThinNCrispy} jsou větší než pizzy s kůrkou typu \emph{ClassicCrust}
 	\[
-		\E\left[D_{\text{\emph{Domino's}}} \mid C = \text{\emph{ThinNCrispy}} \right] > \E\left[ D_{\text{\emph{Domino's}}} \mid C = \text{\emph{ClassicCrust}}\right].
+		H_0: \quad \E\left[D_{\text{\emph{Domino's}}} \mid C = \text{\emph{ThinNCrispy}} \right] > \E\left[ D_{\text{\emph{Domino's}}} \mid C = \text{\emph{ClassicCrust}}\right].
 	\]
 \end{hypothesis}
 
@@ -485,7 +583,6 @@ Ze statistického průměru a směrodatné odchylky můžeme podobně jako výš
 \end{table}
 
 Stejně jako pro firmu \emph{Eagle Boys} se statistické průměry podmíněné druhem přísad liší pouze málo. Ještě výraznější je zde rozdíl ve směrodatných odchylkách podmíněných typem kůrky a druhem přísad. To bude pravděpodobně z části způsobené větším rozdílem mezi statistickými průměry podle typu kůrky \emph{ThinNCrispy} a osatními dvěma typy (\emph{DeepPan} a \emph{ClassicCrust}). Pokud totiž předpokládáme větší vliv výběru kůrky na velikosti pizzy a výběr přísady je nezávislý na výběru typu kůrky, tak bude rozdělení velikostí pizzy podmíněné druhem přísad aritmetickým průměrem rozdělení velikostí pizzy podmíněných typem kůrky, tedy větší rozdíly ve středních hodnotách rozdělení podmíněných kůrkou budou způsobovat větší rozptyly v rozděleních podmíněných druhy přísad.
-\smallskip
 
 Ještě se podíváme na stejné základní statistiky podmíněné firmou.
 
@@ -542,7 +639,7 @@ Jednoznačně vidíme, že hypotéza \ref{hyp:nerovnost_mezi_thincrust_a_midcrus
 	\label{hyp:nerovnost_mezi_thincrust_a_deeppan}
 	Pizzy od firmy \emph{Eagle Boys} s kůrkou typu \emph{ThinCrust} jsou větší než pizzy s kůrkou typu \emph{DeepPan}
 	\[
-		\E\left[D_{\text{\emph{EagleBoys}}} \mid C = \text{\emph{ThinCrust}} \right] > \E\left[ D_{\text{\emph{EagleBoys}}} \mid C = \text{\emph{DeepPan}}\right].
+		H_0: \quad \E\left[D_{\text{\emph{EagleBoys}}} \mid C = \text{\emph{ThinCrust}} \right] > \E\left[ D_{\text{\emph{EagleBoys}}} \mid C = \text{\emph{DeepPan}}\right].
 	\]
 \end{hypothesis}
 
