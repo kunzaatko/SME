@@ -22,7 +22,8 @@ end # }}}
 function get_prop_freq_tables( # {{{
     frame,
     cat_1::Symbol,
-    cat_2::Symbol,
+    cat_2::Symbol;
+    sums=false,
 )
     categories = freqtable(frame, cat_1, cat_2)
     categories_prop = prop(categories)
@@ -34,21 +35,7 @@ function get_prop_freq_tables( # {{{
         )
     end
     return Dict(
-        :freqtable => cat_Σ(categories), :proportion_freqtable => cat_Σ(categories_prop)
+        :freqtable => sums ? cat_Σ(categories) : categories,
+        :proportion_freqtable => sums ? cat_Σ(categories_prop) : categories_prop,
     )
 end # }}}
-
-eagle_freq = get_prop_freq_tables(eagle, :CrustDescription, :Topping)
-
-dominos_freq = get_prop_freq_tables(dominos, :CrustDescription, :Topping)
-
-crust_freq = get_prop_freq_tables(data, :Store, :Crust)
-
-top_freq = get_prop_freq_tables(data, :Store, :Top)
-
-return Dict(
-    :eagle_boys => eagle_freq,
-    :dominos => dominos_freq,
-    :crust => crust_freq,
-    :top => top_freq,
-)
