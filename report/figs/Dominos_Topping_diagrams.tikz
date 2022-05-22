@@ -1,6 +1,6 @@
 \begin{tikzpicture}[/tikz/background rectangle/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, draw opacity={1.0}}, show background rectangle]
-\begin{axis}[point meta max={nan}, point meta min={nan}, title={}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{14 pt}{18.2 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, cells={anchor={center}}, at={(1.02, 1)}, anchor={north west}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={1.0mm}, yshift={-1.0mm}, width={145.4mm}, height={99.6mm}, scaled x ticks={false}, xlabel={}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={0.015999999999999986}, xmax={2.984}, xtick={{0.5,1.5,2.5}}, xticklabels={{BBQMeatlovers,Hawaiian,Supreme}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis x line*={left}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={$D$ (cm)}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={25.3855}, ymax={29.7845}, ytick={{26.0,27.0,28.0,29.0}}, yticklabels={{$26$,$27$,$28$,$29$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis y line*={left}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, colorbar={false}]
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={b758c778-50e9-4ec9-af20-0296ee405787}, area legend, fill={rgb,1:red,0.0;green,0.6056;blue,0.9787}, fill opacity={1.0}, draw opacity={1.0}, line width={0}, solid, forget plot]
+\begin{axis}[point meta max={nan}, point meta min={nan}, legend cell align={left}, legend columns={1}, title={}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{14 pt}{18.2 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, cells={anchor={center}}, at={(1.02, 1)}, anchor={north west}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={1.0mm}, yshift={-1.0mm}, width={145.4mm}, height={99.6mm}, scaled x ticks={false}, xlabel={}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={0.015999999999999986}, xmax={2.984}, xtick={{0.5,1.5,2.5}}, xticklabels={{$BBQMeatlovers$,$Hawaiian$,$Supreme$}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis x line*={left}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={$D \text{ (cm)}$}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={25.3855}, ymax={29.7845}, ytick={{26.0,27.0,28.0,29.0}}, yticklabels={{$26$,$27$,$28$,$29$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis y line*={left}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, colorbar={false}]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={13d90eff-69f9-454f-8e1a-aa3b041ad9a2}, area legend, fill={rgb,1:red,0.0;green,0.6056;blue,0.9787}, fill opacity={1.0}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -230,7 +230,7 @@
             0.44912178289149723  25.527172604634924  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={b758c778-50e9-4ec9-af20-0296ee405787}, area legend, fill={rgb,1:red,0.0;green,0.6056;blue,0.9787}, fill opacity={1.0}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={13d90eff-69f9-454f-8e1a-aa3b041ad9a2}, area legend, fill={rgb,1:red,0.0;green,0.6056;blue,0.9787}, fill opacity={1.0}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -460,7 +460,7 @@
             1.433798307018153  25.588328383529394  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={b758c778-50e9-4ec9-af20-0296ee405787}, area legend, fill={rgb,1:red,0.0;green,0.6056;blue,0.9787}, fill opacity={1.0}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={13d90eff-69f9-454f-8e1a-aa3b041ad9a2}, area legend, fill={rgb,1:red,0.0;green,0.6056;blue,0.9787}, fill opacity={1.0}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -670,7 +670,7 @@
             2.323762285812264  26.091763872540962  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -681,7 +681,7 @@
             0.5  26.585  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -693,7 +693,7 @@
             0.9  26.81  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -705,7 +705,7 @@
             0.5  28.655  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -716,7 +716,7 @@
             0.5  28.655  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -727,7 +727,7 @@
             1.5  26.55  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -739,7 +739,7 @@
             1.9  26.74  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -751,7 +751,7 @@
             1.5  28.86  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -762,7 +762,7 @@
             1.5  28.86  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -773,7 +773,7 @@
             2.5  26.7  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -785,7 +785,7 @@
             2.9  27.12  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -797,7 +797,7 @@
             2.5  28.84  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={e1805b5c-e9da-4ac7-9b44-3491654c5491}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.7}, draw opacity={1.0}, line width={1}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.0;green,0.0;blue,0.0}, name path={0257d982-e64b-49e5-8dcf-c6162b00f44f}, area legend, fill={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, fill opacity={0.75}, draw opacity={1.0}, line width={1}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -808,7 +808,7 @@
             2.5  28.84  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -819,7 +819,7 @@
             0.5  26.585  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -831,7 +831,7 @@
             0.9  26.81  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -843,7 +843,7 @@
             0.5  28.655  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -854,7 +854,7 @@
             0.5  28.655  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -865,7 +865,7 @@
             1.5  26.55  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -877,7 +877,7 @@
             1.9  26.74  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -889,7 +889,7 @@
             1.5  28.86  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -900,7 +900,7 @@
             1.5  28.86  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -911,7 +911,7 @@
             2.5  26.7  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -923,7 +923,7 @@
             2.9  27.12  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -935,7 +935,7 @@
             2.5  28.84  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={b14daa4f-26ce-4629-8bcb-8745286174d8}, draw opacity={1.0}, line width={0}, solid, forget plot]
+    \addplot[color={rgb,1:red,0.8889;green,0.4356;blue,0.2781}, name path={058af65f-d320-4135-b2c7-5142f600f776}, draw opacity={1.0}, line width={0}, solid, forget plot]
         table[row sep={\\}]
         {
             \\
@@ -946,135 +946,135 @@
             2.5  28.84  \\
         }
         ;
-    \addplot[color={rgb,1:red,0.2422;green,0.6433;blue,0.3044}, name path={eaca7524-d916-4b38-ae25-7255042f5a01}, only marks, draw opacity={1.0}, line width={0}, solid, mark={*}, mark size={1.5 pt}, mark repeat={1}, mark options={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.8}, fill={rgb,1:red,0.0;green,0.0;blue,0.0}, fill opacity={0.8}, line width={0.0}, rotate={0}, solid}, forget plot]
+    \addplot[color={rgb,1:red,0.2422;green,0.6433;blue,0.3044}, name path={53387060-b828-4396-b96e-790d4ce54cce}, only marks, draw opacity={1.0}, line width={0}, solid, mark={*}, mark size={0.75 pt}, mark repeat={1}, mark options={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, fill={rgb,1:red,0.0;green,0.0;blue,0.0}, fill opacity={1.0}, line width={0.75}, rotate={0}, solid}, forget plot]
         table[row sep={\\}]
         {
             \\
-            0.4263328015813739  29.63  \\
-            0.2648216317272242  27.16  \\
-            0.40337383892427625  26.6  \\
-            0.5193583806176493  26.15  \\
-            0.35322855936470243  26.56  \\
-            0.36069677918412524  29.0  \\
-            0.34643834621108205  27.2  \\
-            0.19767108812460982  26.61  \\
-            0.5181946594842428  25.98  \\
-            0.582183183101906  26.97  \\
-            0.2912451327668128  26.37  \\
-            0.6114786220918734  28.67  \\
-            0.41943716485326527  29.11  \\
-            0.3990418622292989  26.93  \\
-            0.5091038419842373  26.41  \\
-            0.3044127310270213  26.58  \\
-            0.6534130061297548  27.27  \\
-            0.5641006306425298  28.71  \\
-            0.4525663414121803  26.59  \\
-            0.5084670410299272  25.51  \\
-            0.5048027908449072  29.43  \\
-            0.3729989039007843  26.78  \\
-            0.6095950934203977  26.28  \\
-            0.6747383967698297  26.47  \\
-            0.6975740237919167  26.71  \\
-            0.11643509391165385  26.73  \\
-            0.543512243922779  26.27  \\
-            0.5241425736332759  27.22  \\
-            0.6703629025890745  28.82  \\
-            0.8816914729989087  26.77  \\
-            0.774923432552111  26.77  \\
-            0.37136465369509797  28.64  \\
-            0.6063453841101942  28.52  \\
-            0.5774774523423711  29.41  \\
-            0.4288501187599642  26.6  \\
-            0.4298366045211641  27.04  \\
-            0.34687298439097425  29.04  \\
-            0.4480870347213488  28.94  \\
-            0.6625137699218754  26.6  \\
-            0.2743003455961181  26.81  \\
-            0.7559041424760782  27.1  \\
-            0.6488529248478602  26.36  \\
-            0.39282338355679514  29.14  \\
-            1.3880277038924507  27.06  \\
-            1.6712055713562681  26.59  \\
-            1.546790526502301  28.86  \\
-            1.1199640319257735  26.65  \\
-            1.5207413646100472  28.92  \\
-            1.2764311127053063  26.65  \\
-            1.3531882233916495  28.75  \\
-            1.3095826690848913  26.34  \\
-            1.4531993354427333  29.04  \\
-            1.3211071729376358  29.01  \\
-            1.3607111244043568  29.37  \\
-            1.6295646867410534  26.74  \\
-            1.757598726977342  26.45  \\
-            1.3582465339476306  29.19  \\
-            1.5280594691615497  29.66  \\
-            1.1597494945313984  26.78  \\
-            1.17838129886997  27.0  \\
-            1.5777880954842887  26.77  \\
-            1.3790964152351555  28.95  \\
-            1.2718530993253687  26.7  \\
-            1.5076893024052755  29.09  \\
-            1.321005930180049  29.21  \\
-            1.405681414017001  29.14  \\
-            1.1938441397490214  26.28  \\
-            1.1516912014836775  26.42  \\
-            1.4209780977744284  26.48  \\
-            1.2117039030227494  26.58  \\
-            1.789332971317327  26.65  \\
-            1.344888422719734  27.04  \\
-            1.6230277936373267  27.15  \\
-            1.2531018159789946  26.64  \\
-            1.494852240959384  26.55  \\
-            1.2889542492674855  26.53  \\
-            1.2871014307673263  26.7  \\
-            1.43399495674019  26.76  \\
-            1.5387803620851086  26.3  \\
-            1.7882271185829266  26.6  \\
-            1.5627276579768123  28.86  \\
-            1.5478121629391917  25.58  \\
-            1.535606902387262  25.78  \\
-            1.3946376727460243  26.11  \\
-            2.6337971348063536  29.4  \\
-            2.314791786305999  27.45  \\
-            2.2543559962360606  26.38  \\
-            2.6760332038864134  26.5  \\
-            2.3246200276553757  26.55  \\
-            2.3722229381108364  26.64  \\
-            2.1179012037818974  26.87  \\
-            2.3414024651637773  26.61  \\
-            2.58628173016645  29.33  \\
-            2.151107783400994  26.67  \\
-            2.3473155684873133  26.09  \\
-            2.6781918651310717  29.32  \\
-            2.382836191732228  27.12  \\
-            2.1129803469237194  26.83  \\
-            2.8600638286708886  27.04  \\
-            2.3749554460120064  29.17  \\
-            2.5200596440535636  27.14  \\
-            2.1840410403713113  27.04  \\
-            2.3419353039539073  29.19  \\
-            2.226994217610229  26.26  \\
-            2.602583510085299  26.16  \\
-            2.888084017858417  26.7  \\
-            2.6192717774646943  28.78  \\
-            2.5681270240145837  29.33  \\
-            2.367988962552007  27.27  \\
-            2.6401630318052143  28.9  \\
-            2.459438012749678  29.14  \\
-            2.5376302691388988  29.23  \\
-            2.5194724906517183  28.32  \\
-            2.586669522186022  27.12  \\
-            2.265265536841409  27.05  \\
-            2.3713308012115935  28.44  \\
-            2.578644341846922  26.97  \\
-            2.5774071154364586  27.52  \\
-            2.4744525145267082  26.79  \\
-            2.6669784513427164  26.54  \\
-            2.3474642833266395  26.7  \\
-            2.6355207021300213  28.79  \\
-            2.445641204766143  28.97  \\
-            2.599410881427341  28.84  \\
-            2.678091929246076  26.71  \\
+            0.5583973236572127  29.63  \\
+            0.6515624889065713  27.16  \\
+            0.7367939665117452  26.6  \\
+            0.34341885503005853  26.15  \\
+            0.5940751129588518  26.56  \\
+            0.5239268457527615  29.0  \\
+            0.49604339825295174  27.2  \\
+            0.7412586482066539  26.61  \\
+            0.2967724769850359  25.98  \\
+            0.7958472654717498  26.97  \\
+            0.575449928832083  26.37  \\
+            0.3643980256344571  28.67  \\
+            0.5034017293830212  29.11  \\
+            0.39821312928794433  26.93  \\
+            0.19401567890691246  26.41  \\
+            0.332653911086056  26.58  \\
+            0.33639138119032075  27.27  \\
+            0.3916031649105728  28.71  \\
+            0.29589360171814627  26.59  \\
+            0.47809008056356156  25.51  \\
+            0.4637873071018023  29.43  \\
+            0.2771100814083993  26.78  \\
+            0.30128817762817284  26.28  \\
+            0.13776420892578045  26.47  \\
+            0.30915400372040697  26.71  \\
+            0.18128713177850325  26.73  \\
+            0.3334590830976245  26.27  \\
+            0.7667929085535183  27.22  \\
+            0.6013166218285537  28.82  \\
+            0.18143193209044095  26.77  \\
+            0.829072025155213  26.77  \\
+            0.5824227054365552  28.64  \\
+            0.5236076756947323  28.52  \\
+            0.37862643427191717  29.41  \\
+            0.20055403542171052  26.6  \\
+            0.72145240352985  27.04  \\
+            0.5204992647367904  29.04  \\
+            0.45112103700439093  28.94  \\
+            0.3586658177231189  26.6  \\
+            0.7440347027445856  26.81  \\
+            0.45368440981486496  27.1  \\
+            0.3229226159597202  26.36  \\
+            0.5709790339413692  29.14  \\
+            1.5567147120218199  27.06  \\
+            1.6952915795546823  26.59  \\
+            1.5830251579427457  28.86  \\
+            1.3113522970090166  26.65  \\
+            1.4835907366234042  28.92  \\
+            1.8709871421007307  26.65  \\
+            1.5553854902225226  28.75  \\
+            1.7361070882072869  26.34  \\
+            1.3469285900369026  29.04  \\
+            1.4588245756048053  29.01  \\
+            1.335625318083009  29.37  \\
+            1.7358603288948509  26.74  \\
+            1.8319442203076712  26.45  \\
+            1.3699691076066538  29.19  \\
+            1.4981267770993434  29.66  \\
+            1.212892812326389  26.78  \\
+            1.3209528709272473  27.0  \\
+            1.384276907650466  26.77  \\
+            1.590356761220931  28.95  \\
+            1.1878714957887926  26.7  \\
+            1.4826090706587693  29.09  \\
+            1.3255981120523397  29.21  \\
+            1.5365502612866  29.14  \\
+            1.4998318908076584  26.28  \\
+            1.570672885979302  26.42  \\
+            1.7185591551170787  26.48  \\
+            1.3696468832697106  26.58  \\
+            1.201701958944539  26.65  \\
+            1.32022000519769  27.04  \\
+            1.493859823688405  27.15  \\
+            1.6523177195059677  26.64  \\
+            1.112728515759303  26.55  \\
+            1.6426693353414616  26.53  \\
+            1.8564424331213638  26.7  \\
+            1.1788534438396288  26.76  \\
+            1.1998998870247632  26.3  \\
+            1.3676180961627258  26.6  \\
+            1.5473025540049847  28.86  \\
+            1.507687126381118  25.58  \\
+            1.4276856216656628  25.78  \\
+            1.368514296933114  26.11  \\
+            2.642727806241531  29.4  \\
+            2.5627573474188035  27.45  \\
+            2.4120714993991714  26.38  \\
+            2.1813774589503336  26.5  \\
+            2.7242822639524937  26.55  \\
+            2.319456969110095  26.64  \\
+            2.7692381595452744  26.87  \\
+            2.865606890450092  26.61  \\
+            2.622173064595846  29.33  \\
+            2.183734484689513  26.67  \\
+            2.641710581251524  26.09  \\
+            2.4908211503227826  29.32  \\
+            2.391153355639962  27.12  \\
+            2.3227684561442308  26.83  \\
+            2.193319768335592  27.04  \\
+            2.394747253828524  29.17  \\
+            2.768608019225652  27.14  \\
+            2.729710213793303  27.04  \\
+            2.365053286058357  29.19  \\
+            2.5853894611148163  26.26  \\
+            2.3305889889262996  26.16  \\
+            2.4412799867658546  26.7  \\
+            2.6285245436854052  28.78  \\
+            2.4465100439730825  29.33  \\
+            2.557322378892365  27.27  \\
+            2.5702064824418134  28.9  \\
+            2.3254926434001155  29.14  \\
+            2.585883940245722  29.23  \\
+            2.6110075802186894  28.32  \\
+            2.544311337409664  27.12  \\
+            2.5138139150976246  27.05  \\
+            2.5424001591119265  28.44  \\
+            2.774028538361781  26.97  \\
+            2.5806720640962566  27.52  \\
+            2.5932410577497067  26.79  \\
+            2.2310922556728094  26.54  \\
+            2.5840325175758663  26.7  \\
+            2.4501110452686827  28.79  \\
+            2.333280768329969  28.97  \\
+            2.3042394351156936  28.84  \\
+            2.57174878236755  26.71  \\
         }
         ;
 \end{axis}

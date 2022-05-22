@@ -1,0 +1,169 @@
+\begin{tikzpicture}[/tikz/background rectangle/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, draw opacity={1.0}}, show background rectangle]
+\begin{axis}[point meta max={nan}, point meta min={nan}, legend cell align={left}, legend columns={1}, title={ClassicCrust}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{10 pt}{13.0 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, cells={anchor={center}}, at={(1.02, 1)}, anchor={north west}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={1.0mm}, yshift={-1.0mm}, width={48.8mm}, height={48.8mm}, scaled x ticks={false}, xlabel={}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={25.701723160622556}, xmax={27.804943506044086}, xtick={{26.0,26.5,27.0,27.5}}, xticklabels={{$26.0$,$26.5$,$27.0$,$27.5$}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis x line*={left}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={25.727800000000002}, ymax={27.5722}, ytick={{26.0,26.5,27.0,27.5}}, yticklabels={{$26.0$,$26.5$,$27.0$,$27.5$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis y line*={left}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, colorbar={false}]
+    \addplot[color={rgb,1:red,0.4231;green,0.6225;blue,0.1988}, name path={bdd05c9d-485a-4aa8-83d5-5b08f3ee101c}, draw opacity={1.0}, line width={1}, solid, mark={*}, mark size={0.75 pt}, mark repeat={1}, mark options={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, fill={rgb,1:red,0.0;green,0.0;blue,0.0}, fill opacity={1.0}, line width={0.75}, rotate={0}, solid}]
+        table[row sep={\\}]
+        {
+            \\
+            25.76124826473826  26.02649666797219  \\
+            27.745418401928383  27.435003332027808  \\
+        }
+        ;
+    \addplot[color={rgb,1:red,0.0;green,0.6056;blue,0.9787}, name path={3afa4a56-6c3c-4717-8052-d7f8ab40ba29}, only marks, draw opacity={1.0}, line width={0}, solid, mark={*}, mark size={0.75 pt}, mark repeat={1}, mark options={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, fill={rgb,1:red,0.0;green,0.0;blue,0.0}, fill opacity={1.0}, line width={0.75}, rotate={0}, solid}]
+        table[row sep={\\}]
+        {
+            \\
+            25.76124826473826  25.78  \\
+            25.919191275330242  26.15  \\
+            26.0220086636347  26.28  \\
+            26.10105363742136  26.28  \\
+            26.166648885780074  26.3  \\
+            26.223557694637588  26.41  \\
+            26.27439606819635  26.47  \\
+            26.32076671399518  26.53  \\
+            26.36372929274924  26.54  \\
+            26.404025471876025  26.55  \\
+            26.442198174106867  26.56  \\
+            26.478659806011045  26.58  \\
+            26.513733733265216  26.59  \\
+            26.547680778302638  26.6  \\
+            26.58071688382715  26.61  \\
+            26.61302534380488  26.64  \\
+            26.644765583204983  26.65  \\
+            26.67607969377946  26.65  \\
+            26.70709749402641  26.65  \\
+            26.7379406249708  26.7  \\
+            26.768726041695846  26.71  \\
+            26.799569172640236  26.71  \\
+            26.830586972887186  26.77  \\
+            26.861901083461664  26.78  \\
+            26.893641322861768  26.78  \\
+            26.925949782839496  26.79  \\
+            26.95898588836401  26.81  \\
+            26.99293293340143  26.83  \\
+            27.0280068606556  26.93  \\
+            27.06446849255978  26.97  \\
+            27.10264119479062  26.97  \\
+            27.142937373917405  27.04  \\
+            27.185899952671466  27.04  \\
+            27.232270598470297  27.05  \\
+            27.28310897202906  27.12  \\
+            27.340017780886573  27.15  \\
+            27.405613029245288  27.2  \\
+            27.484658003031946  27.27  \\
+            27.587475391336405  27.27  \\
+            27.745418401928383  27.52  \\
+        }
+        ;
+\end{axis}
+\begin{axis}[point meta max={nan}, point meta min={nan}, legend cell align={left}, legend columns={1}, title={DeepPan}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{10 pt}{13.0 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, cells={anchor={center}}, at={(1.02, 1)}, anchor={north west}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={51.8mm}, yshift={-1.0mm}, width={48.8mm}, height={48.8mm}, scaled x ticks={false}, xlabel={}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={25.746611707989207}, xmax={27.63338829201079}, xtick={{26.0,26.5,27.0,27.5}}, xticklabels={{$26.0$,$26.5$,$27.0$,$27.5$}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis x line*={left}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={25.989809491278272}, ymax={27.317032613984885}, ytick={{26.0,26.200000000000003,26.400000000000002,26.6,26.8,27.0,27.200000000000003}}, yticklabels={{$26.0$,$26.2$,$26.4$,$26.6$,$26.8$,$27.0$,$27.2$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis y line*={left}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, colorbar={false}]
+    \addplot[color={rgb,1:red,0.4231;green,0.6225;blue,0.1988}, name path={95e6fb74-68e2-420c-a1da-eb80f3ee9206}, draw opacity={1.0}, line width={1}, solid, mark={*}, mark size={0.75 pt}, mark repeat={1}, mark options={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, fill={rgb,1:red,0.0;green,0.0;blue,0.0}, fill opacity={1.0}, line width={0.75}, rotate={0}, solid}]
+        table[row sep={\\}]
+        {
+            \\
+            25.800011045272836  26.02737240984544  \\
+            27.57998895472716  27.279469695417717  \\
+        }
+        ;
+    \addplot[color={rgb,1:red,0.0;green,0.6056;blue,0.9787}, name path={541e9931-a38d-4920-b131-4bcdfd638578}, only marks, draw opacity={1.0}, line width={0}, solid, mark={*}, mark size={0.75 pt}, mark repeat={1}, mark options={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, fill={rgb,1:red,0.0;green,0.0;blue,0.0}, fill opacity={1.0}, line width={0.75}, rotate={0}, solid}]
+        table[row sep={\\}]
+        {
+            \\
+            25.800011045272836  26.09  \\
+            25.944558147532476  26.11  \\
+            26.03883543536373  26.16  \\
+            26.1114373390548  26.26  \\
+            26.171782854891706  26.27  \\
+            26.224220413406336  26.34  \\
+            26.271139655176256  26.36  \\
+            26.314005844901242  26.37  \\
+            26.35378892814605  26.42  \\
+            26.391168926689268  26.45  \\
+            26.426644814273303  26.48  \\
+            26.460596851112374  26.5  \\
+            26.493324519332766  26.55  \\
+            26.52507080737426  26.58  \\
+            26.556038454166796  26.59  \\
+            26.586401263784573  26.6  \\
+            26.61631230745929  26.6  \\
+            26.645910126649238  26.6  \\
+            26.67532365451992  26.61  \\
+            26.704676345480074  26.64  \\
+            26.734089873350758  26.67  \\
+            26.763687692540707  26.7  \\
+            26.793598736215422  26.7  \\
+            26.8239615458332  26.7  \\
+            26.854929192625736  26.73  \\
+            26.88667548066723  26.74  \\
+            26.91940314888762  26.76  \\
+            26.953355185726693  26.77  \\
+            26.988831073310728  26.77  \\
+            27.026211071853947  26.87  \\
+            27.065994155098753  27.0  \\
+            27.10886034482374  27.04  \\
+            27.15577958659366  27.06  \\
+            27.20821714510829  27.1  \\
+            27.268562660945197  27.12  \\
+            27.341164564636266  27.14  \\
+            27.43544185246752  27.16  \\
+            27.57998895472716  27.22  \\
+        }
+        ;
+\end{axis}
+\begin{axis}[point meta max={nan}, point meta min={nan}, legend cell align={left}, legend columns={1}, title={ThinNCrispy}, title style={at={{(0.5,1)}}, anchor={south}, font={{\fontsize{10 pt}{13.0 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, legend style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid, fill={rgb,1:red,1.0;green,1.0;blue,1.0}, fill opacity={1.0}, text opacity={1.0}, font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, text={rgb,1:red,0.0;green,0.0;blue,0.0}, cells={anchor={center}}, at={(1.02, 1)}, anchor={north west}}, axis background/.style={fill={rgb,1:red,1.0;green,1.0;blue,1.0}, opacity={1.0}}, anchor={north west}, xshift={102.6mm}, yshift={-1.0mm}, width={48.8mm}, height={48.8mm}, scaled x ticks={false}, xlabel={}, x tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, x tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, xlabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, xmajorgrids={true}, xmin={27.151996457426936}, xmax={30.476840751875397}, xtick={{27.5,28.0,28.5,29.0,29.5,30.0}}, xticklabels={{$27.5$,$28.0$,$28.5$,$29.0$,$29.5$,$30.0$}}, xtick align={inside}, xticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, x grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis x line*={left}, x axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, scaled y ticks={false}, ylabel={}, y tick style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}}, y tick label style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, opacity={1.0}, rotate={0}}, ylabel style={at={(ticklabel cs:0.5)}, anchor=near ticklabel, at={{(ticklabel cs:0.5)}}, anchor={near ticklabel}, font={{\fontsize{11 pt}{14.3 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, ymajorgrids={true}, ymin={26.271724509073543}, ymax={30.09745852180834}, ytick={{27.0,28.0,29.0,30.0}}, yticklabels={{$27$,$28$,$29$,$30$}}, ytick align={inside}, yticklabel style={font={{\fontsize{8 pt}{10.4 pt}\selectfont}}, color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, rotate={0.0}}, y grid style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={0.1}, line width={0.5}, solid}, axis y line*={left}, y axis line style={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, line width={1}, solid}, colorbar={false}]
+    \addplot[color={rgb,1:red,0.4231;green,0.6225;blue,0.1988}, name path={ddeb7cf3-50df-4f0f-b4e9-013e98a6f4ae}, draw opacity={1.0}, line width={1}, solid, mark={*}, mark size={0.75 pt}, mark repeat={1}, mark options={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, fill={rgb,1:red,0.0;green,0.0;blue,0.0}, fill opacity={1.0}, line width={0.75}, rotate={0}, solid}]
+        table[row sep={\\}]
+        {
+            \\
+            27.24609582425095  27.756182822776633  \\
+            30.382741385051382  29.989183030881883  \\
+        }
+        ;
+    \addplot[color={rgb,1:red,0.0;green,0.6056;blue,0.9787}, name path={b37b25f5-767c-46da-a379-acfac8c48a30}, only marks, draw opacity={1.0}, line width={0}, solid, mark={*}, mark size={0.75 pt}, mark repeat={1}, mark options={color={rgb,1:red,0.0;green,0.0;blue,0.0}, draw opacity={1.0}, fill={rgb,1:red,0.0;green,0.0;blue,0.0}, fill opacity={1.0}, line width={0.75}, rotate={0}, solid}]
+        table[row sep={\\}]
+        {
+            \\
+            27.24609582425095  26.38  \\
+            27.493417594875655  27.04  \\
+            27.654273833618426  27.45  \\
+            27.777840872691257  28.32  \\
+            27.880305769895585  28.44  \\
+            27.96913618817353  28.52  \\
+            28.04843226383649  28.64  \\
+            28.120705048285213  28.67  \\
+            28.187613929584387  28.71  \\
+            28.250319508103253  28.75  \\
+            28.30967054352354  28.78  \\
+            28.36631088988563  28.82  \\
+            28.420744472161033  28.84  \\
+            28.473376767837667  28.86  \\
+            28.52454242406871  28.86  \\
+            28.574524340478263  28.92  \\
+            28.623567319367872  28.94  \\
+            28.671888169864065  28.95  \\
+            28.719683461768135  28.97  \\
+            28.767135719555945  29.0  \\
+            28.814418604651166  29.01  \\
+            28.861701489746387  29.04  \\
+            28.909153747534198  29.04  \\
+            28.956949039438268  29.09  \\
+            29.00526988993446  29.11  \\
+            29.05431286882407  29.14  \\
+            29.104294785233623  29.14  \\
+            29.155460441464665  29.14  \\
+            29.2080927371413  29.17  \\
+            29.262526319416704  29.19  \\
+            29.31916666577879  29.19  \\
+            29.37851770119908  29.21  \\
+            29.441223279717946  29.23  \\
+            29.50813216101712  29.32  \\
+            29.580404945465844  29.33  \\
+            29.659701021128804  29.33  \\
+            29.748531439406747  29.37  \\
+            29.850996336611075  29.4  \\
+            29.974563375683907  29.41  \\
+            30.135419614426677  29.43  \\
+            30.382741385051382  29.63  \\
+        }
+        ;
+\end{axis}
+\end{tikzpicture}
