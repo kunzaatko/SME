@@ -1,7 +1,7 @@
 using Query, FreqTables, Statistics, Plots, LaTeXStrings, StatsPlots, NamedArrays
 pgfplotsx()
 
-(data,eagle,dominos) = include("./data_preparation.jl")
+(data, eagle, dominos) = include("./data_preparation.jl")
 
 println("""
 

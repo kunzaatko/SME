@@ -349,7 +349,7 @@ function show_normality_hyp_test()
             crit_value = quantile(statistic_dist, 1 - α)
 
             "               Test outcome: " * (statistic > crit_value ? "reject h_0" : "accept h_0") * "\n" |> print
-    "               p-value:  $(ccdf(statistic_dist, statistic))\n" |> print
+            "               p-value:  $(ccdf(statistic_dist, statistic))\n" |> print
 
         end
     end
@@ -361,17 +361,17 @@ function show_normality_hyp_test()
     """;
             color = :cyan
         )
-        diam_data = data[!,:Diameter]
+        diam_data = data[!, :Diameter]
         bins = get_bins(diam_data, start_bin_count = 1000, min_count = 5)
         dist = Normal(mean(diam_data), var(diam_data))
-        chisq_dict = get_chisq_dict(bins,dist, diam_data)
+        chisq_dict = get_chisq_dict(bins, dist, diam_data)
 
-        statistic = sum((tru - exp)^2 / exp for (tru, exp) in zip(chisq_dict[:true_counts],chisq_dict[:expected_counts]))
+        statistic = sum((tru - exp)^2 / exp for (tru, exp) in zip(chisq_dict[:true_counts], chisq_dict[:expected_counts]))
         statistic_dist = Chisq(length(chisq_dict[:bins]) - 2 - 1)
         crit_value = quantile(statistic_dist, 1 - α)
 
         "          Test outcome: " * (statistic > crit_value ? "reject h_0" : "accept h_0") * "\n" |> print
-"          p-value:  $(ccdf(statistic_dist, statistic))\n" |> print
+        "          p-value:  $(ccdf(statistic_dist, statistic))\n" |> print
 
     end
 
