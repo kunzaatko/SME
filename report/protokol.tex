@@ -112,7 +112,6 @@ Máme $250$ pozorování velikostí pizz, přičemž z toho $125$ pozorování j
 		Hawaiian, BBQMeatlovers, SuperSupremo                  &
 		Hawaiian, BBQMeatlovers, Supreme                                                                                                                                      \\
 	\end{tblr}
-	\label{tab:kategorie}
 	\caption{Kategorie pizz jednotlivých firem, které jsou zastoupeny v datech}
 \end{table}
 
@@ -310,7 +309,7 @@ kontingenční tabulky pro firmy a každou z kategorií zvlášť. Pravou kolonk
 můžeme vychechat protože máme shodně \(125\) pozorování od obou z firem.
 
 Nejprve pro typy kůrky. Stejně jako v předchozím případě budeme ověřovat nezávislost $\left(C \mid S =
-\text{\emph{EagleBoys}}\right)$ a \linebreak $\left( C \mid S = \text{\emph{Domino's}} \right) $. Toto je ekvivalentní s homogenitou rozdělení typu kůrky v subpopulacích podle firmy. Ověřovat budeme hypotézu:
+	\text{\emph{EagleBoys}}\right)$ a \linebreak $\left( C \mid S = \text{\emph{Domino's}} \right) $. Toto je ekvivalentní s homogenitou rozdělení typu kůrky v subpopulacích podle firmy. Ověřovat budeme hypotézu:
 
 \begin{hypothesis}[Homogenita typu kůrky podle firmy]
 	\label{hyp:homogenita_kurky}
@@ -865,7 +864,7 @@ Hypotézy pro normalitu těchto subpopulací zní:
 	Rozdělení velikosti pizzy v subpopulacích podle typu kůrky jsou normální
 	\begin{enumerate}[label=(\alph*)]
 		\item Pro kůrku \emph{MidCrust}
-	\label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_a}
+		      \label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_a}
 		      \[
 			      \begin{split}
 				      &H_0: \quad (D \mid S = \text{\emph{EagleBoys}}, C = \text{\emph{MidCrust}}) \sim
@@ -876,26 +875,26 @@ Hypotézy pro normalitu těchto subpopulací zní:
 			      \end{split}
 		      \]
 		\item Pro kůrku \emph{DeepPan}
-	\label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_b}
+		      \label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_b}
 		      \[
-                  \begin{split}
-                  &H_0: \quad (D \mid S = \text{\emph{EagleBoys}}, C = \text{\emph{DeepPan}}) \sim
-			      \mathscr{N}(\overline{D}, s_D) \against \\
-                  &H_1: \quad (D \mid S =
-			      \text{\emph{EagleBoys}}, C = \text{\emph{DeepPan}}) \not\sim \mathscr{N}(\overline{D},
-			      s_D),
-                  \end{split}
+			      \begin{split}
+				      &H_0: \quad (D \mid S = \text{\emph{EagleBoys}}, C = \text{\emph{DeepPan}}) \sim
+				      \mathscr{N}(\overline{D}, s_D) \against \\
+				      &H_1: \quad (D \mid S =
+				      \text{\emph{EagleBoys}}, C = \text{\emph{DeepPan}}) \not\sim \mathscr{N}(\overline{D},
+				      s_D),
+			      \end{split}
 		      \]
 		\item Pro kůrku \emph{ThinCrust}
-	\label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_c}
+		      \label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_c}
 		      \[
-                  \begin{split}
-                  &H_0: \quad (D \mid S = \text{\emph{EagleBoys}}, C = \text{\emph{ThinCrust}}) \sim
-			      \mathscr{N}(\overline{D}, s_D) \against \\
-                  &H_1: \quad (D \mid S =
-			      \text{\emph{EagleBoys}}, C = \text{\emph{ThinCrust}}) \not\sim
-			      \mathscr{N}(\overline{D}, s_D).
-                  \end{split}
+			      \begin{split}
+				      &H_0: \quad (D \mid S = \text{\emph{EagleBoys}}, C = \text{\emph{ThinCrust}}) \sim
+				      \mathscr{N}(\overline{D}, s_D) \against \\
+				      &H_1: \quad (D \mid S =
+				      \text{\emph{EagleBoys}}, C = \text{\emph{ThinCrust}}) \not\sim
+				      \mathscr{N}(\overline{D}, s_D).
+			      \end{split}
 		      \]
 	\end{enumerate}
 \end{hypothesis}
@@ -915,7 +914,7 @@ Opět si vyslovíme testované hypotézy:
 	Rozdělení velikosti pizzy v subpopulacích podle typu kůrky jsou normální
 	\begin{enumerate}[label=(\alph*)]
 		\item Pro kůrku \emph{ClassicCrust}
-	\label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_a}
+		      \label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_a}
 		      \[
 			      \begin{split}
 				      &H_0: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{ClassicCrust}}) \sim
@@ -926,24 +925,24 @@ Opět si vyslovíme testované hypotézy:
 			      \end{split}
 		      \]
 		\item Pro kůrku \emph{DeepPan}
-	\label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_b}
+		      \label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_b}
 		      \[
-                  \begin{split}
-                  &H_0: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{DeepPan}}) \sim
-			      \mathscr{N}(\overline{D}, s_D) \against\\
-                  &H_1: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{DeepPan}}) \not\sim \mathscr{N}(\overline{D},
-			      s_D),
-                  \end{split}
+			      \begin{split}
+				      &H_0: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{DeepPan}}) \sim
+				      \mathscr{N}(\overline{D}, s_D) \against\\
+				      &H_1: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{DeepPan}}) \not\sim \mathscr{N}(\overline{D},
+				      s_D),
+			      \end{split}
 		      \]
 		\item Pro kůrku \emph{ThinNCrispy}
-	\label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_c}
+		      \label{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_c}
 		      \[
-                  \begin{split}
-                  &H_0: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{ThinNCrispy}}) \sim
-                      \mathscr{N}(\overline{D}, s_D) \against\\
-                  &H_1: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{ThinNCrispy}})
-                  \not\sim \mathscr{N}(\overline{D}, s_D).
-                  \end{split}
+			      \begin{split}
+				      &H_0: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{ThinNCrispy}}) \sim
+				      \mathscr{N}(\overline{D}, s_D) \against\\
+				      &H_1: \quad (D \mid S = \text{\emph{Dominos}}, C = \text{\emph{ThinNCrispy}})
+				      \not\sim \mathscr{N}(\overline{D}, s_D).
+			      \end{split}
 		      \]
 	\end{enumerate}
 \end{hypothesis}
@@ -963,17 +962,17 @@ A hypotézy pro normalitu subpopulací podle firem:
 	Rozdělení velikosti pizzy v subpopulacích podle firmy jsou normální
 	\begin{enumerate}[label=(\alph*)]
 		\item Pro firmu \emph{EagleBoys}
-	\label{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy_eb}
+		      \label{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy_eb}
 		      \[
-                  H_0: \quad (D \mid S = \text{\emph{EagleBoys}}) \sim
+			      H_0: \quad (D \mid S = \text{\emph{EagleBoys}}) \sim
 			      \mathscr{N}(\overline{D}, s_D) \against H_1: \quad (D \mid S =
-                  \text{\emph{EagleBoys}}) \not\sim \mathscr{N}(\overline{D},
+			      \text{\emph{EagleBoys}}) \not\sim \mathscr{N}(\overline{D},
 			      s_D),
 		      \]
 		\item Pro firmu \emph{Dominos}
-	\label{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy_d}
+		      \label{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy_d}
 		      \[
-                  H_0: \quad (D \mid S = \text{\emph{Dominos}}) \sim
+			      H_0: \quad (D \mid S = \text{\emph{Dominos}}) \sim
 			      \mathscr{N}(\overline{D}, s_D) \against H_1: \quad (D \mid S = \text{\emph{Dominos}}) \not\sim \mathscr{N}(\overline{D},
 			      s_D).
 		      \]
@@ -984,7 +983,7 @@ Pro testování hypotéz
 \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky},
 \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky} a
 \ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy} používáme \emph{Pearsonův
-chí-kvadrát test} na hladině významnosti \(\alpha = 5 \%\) s konzervativním kritickým oborem s odhadnutými parametry pro rozptyl a
+	chí-kvadrát test} na hladině významnosti \(\alpha = 5 \%\) s konzervativním kritickým oborem s odhadnutými parametry pro rozptyl a
 střední hodnotu z dat a data kvantizujeme do homogeních intervalů za požadavku alespoň 5ti
 hodnot v každém intervalu.
 
@@ -999,68 +998,179 @@ hodnot v každém intervalu.
 			vline{2-3}={3-Z}{1pt, solid},
 			vspan=even
 		}
-		                                                      &                                                                       & \SetCell[c=2]{c}{\emph{test}}                                              \\
-		                                                      &                                                                       & \color{Purple} \textbf{$H_{0}$} & \color{Purple} \textbf{$p_{\text{val}}$} \\
+		                                                      &                                                                                                       & \SetCell[c=2]{c}{\emph{test}}                                              \\
+		                                                      &                                                                                                       & \color{Purple} \textbf{$H_{0}$} & \color{Purple} \textbf{$p_{\text{val}}$} \\
 		\SetCell[r=8]{m,1em}{\rotatebox{90}{\emph{hypotéza}}} &
 		\color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky}
-        \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_a}}}
+				\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_a}}}
 		                                                      & \SetCell{Red} zamítáme
-                                                              & \SetCell{Red} $0{,}0112$                                                                                                                         \\
+		                                                      & \SetCell{Red} $0{,}0112$                                                                                                                                                           \\
 		                                                      &
-                                                              \color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky}
-        \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_b}}}
+		\color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky}
+				\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_b}}}
 		                                                      & \SetCell{Red} zamítáme
-                                                              & \SetCell{Red} $1{,}6 \cdot 10^{-13}$                                                                                                                         \\
+		                                                      & \SetCell{Red} $1{,}6 \cdot 10^{-13}$                                                                                                                                               \\
 		                                                      &
-                                                              \color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky}
-        \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_c}}}
+		\color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky}
+				\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky_c}}}
 		                                                      & \SetCell{Red} zamítáme
-                                                              & \SetCell{Red} $0{,}0020$                                                                                                                         \\
-                                                              &
+		                                                      & \SetCell{Red} $0{,}0020$                                                                                                                                                           \\
+		                                                      &
 		\color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky}
-        \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_a}}}
+				\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_a}}}
 		                                                      & \SetCell{Red} zamítáme
-                                                              & \SetCell{Red} $0{,}0230$                                                                                                                         \\
+		                                                      & \SetCell{Red} $0{,}0230$                                                                                                                                                           \\
 		                                                      &
-                                                              \color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky}
-        \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_b}}}
+		\color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky}
+				\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_b}}}
 		                                                      & \SetCell{Red} zamítáme
-                                                              & \SetCell{Red} $0{,}0102$                                                                                                                         \\
+		                                                      & \SetCell{Red} $0{,}0102$                                                                                                                                                           \\
 		                                                      &
-                                                              \color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky}
-        \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_c}}}
+		\color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky}
+				\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky_c}}}
 		                                                      & \SetCell{Red} zamítáme
-                                                              & \SetCell{Red} $0{,}0016$                                                                                                                         \\
-                                                              &
+		                                                      & \SetCell{Red} $0{,}0016$                                                                                                                                                           \\
+		                                                      &
 		\color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy}
-        \ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy_eb}}}
+				\ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy_eb}}}
 		                                                      & \SetCell{Red} zamítáme
-                                                              & \SetCell{Red} $10^{-18}$                                                                                                                         \\
+		                                                      & \SetCell{Red} $10^{-18}$                                                                                                                                                           \\
 		                                                      & \color{YellowOrange}{\textbf{\ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy}
-        \ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy_d}}}
+				\ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy_d}}}
 		                                                      & \SetCell{Red} zamítáme
-		                                                      & \SetCell{Red} $6\cdot10^{-29}$                                                                                                                         \\
+		                                                      & \SetCell{Red} $6\cdot10^{-29}$                                                                                                                                                     \\
 	\end{tblr}
 	\caption{\emph{Pearsonův chí-kvadrát test} pro hypotézy normality
-    \ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky},
-\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky} a
-\ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy}}
+		\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_eagle_boys_v_subpopulacich_podle_typu_kurky},
+		\ref{hyp:normalita_rozdeleni_velikosti_pizz_pro_firmu_dominos_v_subpopulacich_podle_typu_kurky} a
+		\ref{hyp:normalita_rozdeleni_velikosti_pizz_v_subpopulacich_podle_firmy}}
 \end{table}
 
-\noindent To znamená že nebudeme moci použít pro testy předpoklad normality dat a budeme muset
-hypotézy testovat neparametricky.
+To bohužel znamená, že pro správné použití testů, bychom neměli použít předpoklad normality dat a měli bychom hypotézy testovat neparametricky.
 
-\subsection{Vedlejší hypotézy}%
-\label{sub:vedlejší_hypotézy}
+\subsection{T-testy}%
+\label{sub:t-testy}
+Zamítnutí normality nám brání správně použít t-test pro hypotézy
+\ref{hyp:nerovnost_mezi_thincrust_a_midcrust}, \ref{hyp:nerovnost_mezi_thinncrispy_a_clasiccrust} a
+\ref{hyp:nerovnost_mezi_thincrust_a_deeppan} a hlavní hypotézy
+\ref{hyp:nerovnost_mezi_velikostmi_pizz_firem} a \ref{hyp:velikost_12_palcu}. Otestujeme přesto tyto
+hypotézy s předpokladem normality. Musíme však na tyto výsledky nahlížet s vědomím, že nebyly splněny
+veškeré předpoklady.
 
-% \todo[inline]{Add T-test for two random choices for difference positive}
+\begin{note}
+	Další předpoklad, který není jednoznačně splněn je shodnost směrodatných odchylek porovnávaných
+	výběrů. Tu předpokládáme na základě doměnky, že chyba vznikla měřením a měření všech dat
+	probíhalo stejným způsobem.
+\end{note}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tblr}{
+			colspec={cccc},
+			rowspec={cccc},
+			hline{2-3}={3-Z}{1pt, solid},
+			vline{3-Z}={2}{1pt, solid},
+			hline{3-Z}={2}{1pt, solid},
+			vline{2-3}={3-Z}{1pt, solid},
+			vspan=even
+		}
+		                                                      &                            & \SetCell[c=2]{c}{\emph{test}}                                              \\
+		                                                      &                            & \color{Purple} \textbf{$H_{0}$} & \color{Purple} \textbf{$p_{\text{val}}$} \\
+		\SetCell[r=5]{m,1em}{\rotatebox{90}{\emph{hypotéza}}} &
+		\color{YellowOrange}{\textbf{\ref{hyp:nerovnost_mezi_velikostmi_pizz_firem}}}
+		                                                      & \SetCell{Green} nezamítáme
+		                                                      & \SetCell{Green} $1{,}0$                                                                                 \\
+		                                                      &
+		\color{YellowOrange}{\textbf{\ref{hyp:velikost_12_palcu}}}
+		                                                      & \SetCell{Red} zamítáme
+		                                                      & \SetCell{Red}
+		$2\cdot 10^{-47}$                                                                                                                                               \\
+		                                                      &
+		\color{YellowOrange}{\ref{hyp:nerovnost_mezi_thincrust_a_midcrust}}
+		                                                      & \SetCell{Green} nezamítáme
+		                                                      & \SetCell{Green} 1{,}0                                                                                   \\
+		                                                      &
+		\color{YellowOrange}{\ref{hyp:nerovnost_mezi_thinncrispy_a_clasiccrust}}
+		                                                      & \SetCell{Green} nezamítáme
+		                                                      & \SetCell{Green} 1{,}0                                                                                   \\
+		                                                      &
+		\color{YellowOrange}{\ref{hyp:nerovnost_mezi_thincrust_a_deeppan}}
+		                                                      & \SetCell{Green} nezamítáme
+		                                                      & \SetCell{Green} 1{,}0                                                                                   \\
+	\end{tblr}
+	\caption{\emph{T-testy} hypotéz}
+	\label{tab:t_testy_hypotez}
+\end{table}
+
+\begin{note}
+	Věrohodnost výsledku testování hypotéz tímto způsobem souvisí s velikostmi $p_{val}$ v testech
+	normality pro jednotlivé výběry, které figurují v testovaných hypotézách. Větší
+	váhu přisuzujeme výsledkům pro hypotézy \ref{hyp:nerovnost_mezi_thincrust_a_midcrust} a
+	\ref{hyp:nerovnost_mezi_thinncrispy_a_clasiccrust}. Menší váhu dáváme výsledkům testování hypotéz
+	\ref{hyp:nerovnost_mezi_thincrust_a_deeppan}, \ref{hyp:nerovnost_mezi_velikostmi_pizz_firem} a
+	\ref{hyp:velikost_12_palcu}. Pro ty budou určující neparametrické testy.
+\end{note}
+
 % \todo[inline]{When test of normality fails, add nonparametric test}
-% \todo[inline]{Test for E of different Crusts... If all under 12 inches conclude false}
-% \todo[inline]{ANOVA for different crust types of different stores}
+
+\subsection{Neparametrické testy}%
+\label{sub:neparametrické_testy}
+
+Otestujeme nyní ještě neparametricky hypotézy \ref{hyp:nerovnost_mezi_velikostmi_pizz_firem} a
+\ref{hyp:velikost_12_palcu}. Při těchto testech již budou všechny požadavky splněny. Pro hypotézu
+\ref{hyp:nerovnost_mezi_velikostmi_pizz_firem} používáme Wilcoxonův test rozdílech hodnot z
+výběru \(\left( D \mid C = \text{\emph{EagleBoys}} \right)\) a \(\left( D \mid C =
+\text{\emph{Domino's} } \right)\) a testujeme že tyto rozdíly jsou větší než \(0\).  Pro hypotézu
+\ref{hyp:velikost_12_palcu} potom používáme stejný test na hodnoty z výběru \(\left( D \mid C =
+\text{\emph{EagleBoys} } \right)\) zmenšené o \(12\) palců.
+
+\begin{note}
+	Není úplně pravda, že jsou automaticky splněny předpoklady. Také je pro použití tohoto testu
+	nutné, aby bylo rozdělení symetrické. V případě \ref{hyp:nerovnost_mezi_velikostmi_pizz_firem}
+	toto bude pravda pokud oba výběry jsou ze symetrického rozdělení. V případě
+	\ref{hyp:velikost_12_palcu} tento předpoklad je platný, jestliže je symetrické rozdělení  \(\left( D \mid C =
+	\text{\emph{EagleBoys} } \right)\). Symetrii obou rozdělení předpokládáme.
+\end{note}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tblr}{
+			colspec={cccc},
+			rowspec={cccc},
+			hline{2-3}={3-Z}{1pt, solid},
+			vline{3-Z}={2}{1pt, solid},
+			hline{3-Z}={2}{1pt, solid},
+			vline{2-3}={3-Z}{1pt, solid},
+			vspan=even
+		}
+		                                                      &                            & \SetCell[c=2]{c}{\emph{test}}                                              \\
+		                                                      &                            & \color{Purple} \textbf{$H_{0}$} & \color{Purple} \textbf{$p_{\text{val}}$} \\
+		\SetCell[r=2]{m,1em}{\rotatebox{90}{\emph{hypotéza}}} &
+		\color{YellowOrange}{\textbf{\ref{hyp:nerovnost_mezi_velikostmi_pizz_firem}}}
+		                                                      & \SetCell{Green} nezamítáme
+		                                                      & \SetCell{Green} $1{,}0$                                                                                 \\
+		                                                      &
+		\color{YellowOrange}{\textbf{\ref{hyp:velikost_12_palcu}}}
+		                                                      & \SetCell{Red} zamítáme
+		                                                      & \SetCell{Red}
+		$2{,}6\cdot 10^{-22}$                                                                                                                                           \\
+	\end{tblr}
+	\caption{Wilcoxonův znaménkový test}
+\end{table}
+
+\noindent Výsledky testů hypotéz \ref{hyp:nerovnost_mezi_velikostmi_pizz_firem} a \ref{hyp:velikost_12_palcu}
+se shodují s výsledky t-testů z tabulky \ref{tab:t_testy_hypotez} a tedy nedošlo k rozporu.
+
 
 \section{Závěr}%
 \label{sec:závěr}
-\todo[inline]{Conclusion... section}
+Analyzovali jsme data z marketingové kampaně firmy EagleBoys a otestovali jsme dvě hlavní tvrzení,
+které v kampani vystupovali. Dospěli jsme k závěru, že sice pizzy od firmy EagleBoys nejsou větší
+než 12 palců, ale zato jsou větší, než pizzy od firmy Domino's.
 
+Dále jsme při analýze zjistili, že velikosti pizz jsou u obou z firem více ovlivněné typem kůrky,
+než přísadami. Dospěli jsme k řadě vztahů velikostí pizz různých typů kůrek.
 
 \end{document}
