@@ -55,4 +55,3 @@ hist_dominos = histogram(
     ),
     label=L"$D_{\text{Domino's}}$",
 );
-

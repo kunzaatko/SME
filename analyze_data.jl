@@ -2,6 +2,11 @@ using HypothesisTests, Query
 using Statistics: mean, var
 using Distributions: Normal, cdf, Distribution, Chisq, quantile, ccdf
 
+struct TestResult
+    P_value::Real
+    H_0::Bool
+end
+
 #' @description
 #'
 #' Shows all the freqtables for the data
@@ -375,6 +380,232 @@ function show_normality_hyp_test()
 
     end
 
+
+end # }}}
+
+function show_category_inequality_ttest()
+    # {{{
+    α = 0.05
+    _, eagle, dominos = include("data_preparation.jl")
+
+    get_crust(df, crust) = @from i in df begin
+        @where i.CrustDescription == crust
+        @select i.Diameter
+        @collect
+    end
+
+    S²(X) = sum((X .- mean(X)) .^ 2) / (length(X) - 1)
+
+    function S²(X, Y)
+        m, n = length(X), length(Y)
+        ((m - 1)S²(X) + (n - 1)S²(Y)) / (m + n - 2)
+    end
+
+    function T(X, Y, δ)
+        m, n = length(X), length(Y)
+        ((mean(Y) - mean(X)) - δ) / (S²(X, Y) * sqrt(1 / m + 1 / n))
+    end
+
+    function TTest_greater_mean_same_variance(X, Y, α)
+        m, n = length(X), length(Y)
+        dist = Distributions.TDist(m + n - 2)
+        stat = T(X, Y, 0)
+        H_0 = stat <= quantile(dist, 1 - α)
+
+        return TestResult(ccdf(dist, stat), H_0)
+    end
+
+    eagle_thincrust = get_crust(eagle, "ThinCrust")
+    eagle_midcrust = get_crust(eagle, "MidCrust")
+
+    test_thin_gt_mid = TTest_greater_mean_same_variance(eagle_thincrust, eagle_midcrust, α)
+
+    dominos_thinncrispy = get_crust(dominos, "ThinNCrispy")
+    dominos_classiccrust = get_crust(dominos, "ClassicCrust")
+
+    test_thinncrispy_gt_classic = TTest_greater_mean_same_variance(dominos_thinncrispy, dominos_classiccrust, α)
+
+    eagle_deeppan = get_crust(eagle, "DeepPan")
+    test_thin_gt_deep = TTest_greater_mean_same_variance(eagle_thincrust, eagle_deeppan, α)
+
+    printstyled(
+        """
+#######################################################################
+#                          Testy nerovnosti                           #
+#######################################################################
+""";
+        color = :red
+    )
+
+    printstyled(
+        """
+        # EagleBoys
+""";
+        color = :cyan
+    )
+
+    printstyled(
+        """
+            # ThinCrust > MidCrust
+""";
+        color = :blue
+    )
+    "               Test outcome: " * (!test_thin_gt_mid.H_0 ? "reject h_0" : "accept h_0") * "\n" |> print
+    "               p-value:  $(test_thin_gt_mid.P_value)\n" |> print
+
+    printstyled(
+        """
+            # ThinCrust > DeepPan
+""";
+        color = :blue
+    )
+
+    "               Test outcome: " * (!test_thin_gt_deep.H_0 ? "reject h_0" : "accept h_0") * "\n" |> print
+    "               p-value:  $(test_thin_gt_deep.P_value)\n" |> print
+
+    printstyled(
+        """
+        # Domino's
+""";
+        color = :cyan
+    )
+    printstyled(
+        """
+            # ThinNCrispy > ClassicCrust
+""";
+        color = :blue
+    )
+    "               Test outcome: " * (!test_thinncrispy_gt_classic.H_0 ? "reject h_0" : "accept h_0") * "\n" |> print
+    "               p-value:  $(test_thinncrispy_gt_classic.P_value)\n" |> print
+end # }}}
+
+function show_store_inequality_ttest()
+    #{{{
+    α = 0.05
+    _, eagle, dominos = include("data_preparation.jl")
+
+    S²(X) = sum((X .- mean(X)) .^ 2) / (length(X) - 1)
+
+    function S²(X, Y)
+        m, n = length(X), length(Y)
+        ((m - 1)S²(X) + (n - 1)S²(Y)) / (m + n - 2)
+    end
+
+    function T(X, Y, δ)
+        m, n = length(X), length(Y)
+        ((mean(Y) - mean(X)) - δ) / (S²(X, Y) * sqrt(1 / m + 1 / n))
+    end
+
+    function TTest_greater_mean_same_variance(X, Y, α)
+        m, n = length(X), length(Y)
+        dist = Distributions.TDist(m + n - 2)
+        stat = T(X, Y, 0)
+        H_0 = stat <= quantile(dist, 1 - α)
+
+        return TestResult(ccdf(dist, stat), H_0)
+    end
+
+    eagle_diam = eagle[!, "Diameter"]
+    test_eagle_gt_dominos = TTest_greater_mean_same_variance(eagle_diam, dominos[!, "Diameter"], α)
+
+    # NOTE: This is a try for a reasonable test where we generate data from a normal distribution
+    # with the std estimated from eagle_diam and mean 12 inches and make a TTest with eagle_diam 
+    # <14-09-22> 
+    test_eagle_gt_12_generated = TTest_greater_mean_same_variance(eagle_diam, rand(Normal(30.48, S²(eagle_diam)), length(eagle_diam)), 0.05)
+
+    confint_12inches = mean(eagle_diam) - quantile(Distributions.TDist(length(eagle_diam) - 1), 1 - α) * S²(eagle_diam) / sqrt(length(eagle_diam))
+
+    test_eagle_gt_12_ttest = OneSampleTTest(eagle_diam, 30.48)
+    pval_eagle_gt_12 = pvalue(test_eagle_gt_12_ttest; tail = :left)
+
+
+    printstyled(
+        """
+#######################################################################
+#                          Testy nerovnosti                           #
+#######################################################################
+""";
+        color = :red
+    )
+
+    printstyled(
+        """
+        # EagleBoys > Dominos
+""";
+        color = :cyan
+    )
+
+    "           Test outcome: " * (!test_eagle_gt_dominos.H_0 ? "reject h_0" : "accept h_0") * "\n" |> print
+    "           p-value:  $(test_eagle_gt_dominos.P_value)\n" |> print
+    printstyled(
+        """
+        # EagleBoys > 12 inches (generated data)
+""";
+        color = :cyan
+    )
+
+    "           Test outcome: " * (!test_eagle_gt_12_generated.H_0 ? "reject h_0" : "accept h_0") * "\n" |> print
+    "           p-value:  $(test_eagle_gt_12_generated.P_value)\n" |> print
+
+    printstyled(
+        """
+        # EagleBoys > 12 inches (t-test)
+""";
+        color = :cyan
+    )
+
+    show(test_eagle_gt_12_ttest)
+    "           p-value:  $pval_eagle_gt_12\n" |> print
+
+    printstyled(
+        """
+        # EagleBoys > 12 inches (confidence interval)
+""";
+        color = :cyan
+    )
+
+    "           Critical value:  $confint_12inches" |> print
+
+
+end #}}}
+
+function show_nonparametric_store_inequality_test()
+    # {{{
+    _, eagle, dominos = include("data_preparation.jl")
+
+    test_comparison = HypothesisTests.SignedRankTest(eagle[!, "Diameter"], dominos[!, "Diameter"])
+    pval_comparison = pvalue(test_comparison; tail = :left)
+
+    test_12inches = HypothesisTests.SignedRankTest(eagle[!, "Diameter"] .- 30.48)
+    pval_12inches = pvalue(test_12inches; tail = :left)
+
+    printstyled(
+        """
+##############################################
+#       Testy nerovnosti pro firmy           #
+##############################################
+
+""";
+        color = :red
+    )
+
+    printstyled(
+        """
+    # Eagle > Dominos
+""";
+        color = :cyan
+    )
+    show(test_comparison)
+    print("p-value:  $pval_comparison\n")
+
+    printstyled(
+        """
+    # Eagle > 12 inches
+""";
+        color = :cyan
+    )
+    show(test_12inches)
+    print("p-value:  $pval_12inches")
 
 end # }}}
 
