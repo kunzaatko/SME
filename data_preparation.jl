@@ -1,6 +1,6 @@
 using CSV, DataFrames, Unitful, Query
 
-# Declaring that the Diameter column is in centimeters... This will be usefull testing the hypothesis where the diameter is in inches
+# Declaring that the Diameter column is in centimeters... This will be useful testing the hypothesis where the diameter is in inches
 data = DataFrame(
     @mutate(Diameter_cm = _.Diameter * 1u"cm")(CSV.read("./data/pizzasize.csv", DataFrame))
 )
