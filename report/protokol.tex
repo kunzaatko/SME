@@ -4,6 +4,7 @@
 \usepackage[a4paper,left=1cm,right=1cm,top=1cm,bottom=2cm]{geometry}
 
 \usepackage{babel}
+\usepackage{mdframed}
 \usepackage{graphics,graphicx}
 \graphicspath{{./figs/}}
 \usepackage{amsfonts,amssymb,amsmath,amsthm,mathrsfs}
@@ -61,7 +62,7 @@
 \renewcommand\P{\ensuremath{\mathbb{P}}}
 \newcommand\against{\ensuremath{\quad\times\quad}}
 \newtheorem*{note}{\textsl{Poznámka:}}
-\newtheorem{hypothesis}{\textsl{Hypotéza}}
+\newmdtheoremenv{hypothesis}{\textsl{Hypotéza}}
 
 \parskip=5pt
 
@@ -769,8 +770,6 @@ V jednom grafu si tedy znázorníme \emph{krabicový},
 
 Nejprve pro firmu
 Eagle Boys Pizzas a kategorii typu \emph{kůrky}.
-
-\todo[inline]{Deal with outliers?!}
 
 \begin{figure}[H]
 	\centering
