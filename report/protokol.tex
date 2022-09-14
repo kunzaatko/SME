@@ -308,7 +308,8 @@ Podíváme se nyní jaký má výběr firmy, ve které pizzu objednáme, vliv na
 kontingenční tabulky pro firmy a každou z kategorií zvlášť. Pravou kolonku pro sumy v řádcích
 můžeme vychechat protože máme shodně \(125\) pozorování od obou z firem.
 
-Nejprve pro typy kůrky. Stejně jako v předchozím případě budeme ověřovat nezávislost $C \mid S = \text{\emph{EagleBoys}}$ a $C \mid S = \text{\emph{Domino's}}$. Toto je ekvivalentní s homogenitou rozdělení typu kůrky v subpopulacích podle firmy. Ověřovat budeme hypotézu:
+Nejprve pro typy kůrky. Stejně jako v předchozím případě budeme ověřovat nezávislost $\left(C \mid S =
+\text{\emph{EagleBoys}}\right)$ a \linebreak $\left( C \mid S = \text{\emph{Domino's}} \right) $. Toto je ekvivalentní s homogenitou rozdělení typu kůrky v subpopulacích podle firmy. Ověřovat budeme hypotézu:
 
 \begin{hypothesis}[Homogenita typu kůrky podle firmy]
 	\label{hyp:homogenita_kurky}
@@ -594,7 +595,7 @@ dále mohli testovat hypotézu:
 	\]
 	proti alternativě
 	\[
-		H_0: \quad \E\left[D \mid C = \text{\emph{ThinNCrispy}}, S = \text{\emph{Domino's}} \right]
+		H_1: \quad \E\left[D \mid C = \text{\emph{ThinNCrispy}}, S = \text{\emph{Domino's}} \right]
 		\le \E\left[ D \mid C = \text{\emph{ClassicCrust}}, S = \text{\emph{Domino's}}\right].
 	\]
 \end{hypothesis}
@@ -684,7 +685,7 @@ rozdělené a to pro obě z firem.
 \end{hypothesis}
 
 Tuto hypotézu můžeme otestovat bez předpokladu normality například pomocí aproximativního
-\emph{Mann-Whitney testu} s hladinou významnosti .
+\emph{Mann-Whitney testu} s hladinou významnosti 5\%.
 
 \begin{table}[H]
 	\centering
@@ -745,7 +746,7 @@ Ještě se podíváme na stejné základní statistiky podmíněné firmou.
 		$\SI{10.04}{\inch}  \,             ( \SI{25.51}{\cm})$                                                                                                                                                                                                                                               \\
 	\end{tblr}
 
-	\caption{Základní statistiky velikosti pizz firmou}
+	\caption{Základní statistiky velikosti pizz podmíněné firmou}
 \end{table}
 
 Vidíme, že hypotézu \ref{hyp:nerovnost_mezi_velikostmi_pizz_firem} má smysl ověřovat a podle těchto
@@ -790,7 +791,7 @@ platit, dokonce bychom mohli ověřovat i platnost hypotézy:
 	\]
 	proti alternativě
 	\[
-		H_0: \quad \E\left[D \mid C = \text{\emph{ThinCrust}}, S = \text{\emph{EagleBoys}} \right]
+		H_1: \quad \E\left[D \mid C = \text{\emph{ThinCrust}}, S = \text{\emph{EagleBoys}} \right]
 		\le
 		\E\left[ D \mid C = \text{\emph{DeepPan}}, S = \text{\emph{EagleBoys}}\right].
 	\]
@@ -814,6 +815,8 @@ grafů jasné, že velikosti pizzy jsou více ovlivněné typem kůrky.
 \label{ssub:graficke_znazorneni_dominos}
 
 Nyní ještě pro firmu Domino's.
+
+\nopagebreak
 
 \begin{figure}[H]
 	\centering
