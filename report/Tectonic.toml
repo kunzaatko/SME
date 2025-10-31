@@ -5,3 +5,51 @@ bundle = "https://data1.fullyjustified.net/tlextras-2022.0r0.tar"
 [[output]]
 name = "protokol"
 type = "pdf"
+
+[[output]]
+name = "fig_Dominos-Crust-diagrams"
+index = "figs/Dominos_Crust_diagrams.tikz"
+preamble = "_preamble_tikz.tex"
+type = "pdf"
+
+[[output]]
+name = "fig_Dominos-Topping-diagrams"
+index = "figs/Dominos_Topping_diagrams.tikz"
+preamble = "_preamble_tikz.tex"
+type = "pdf"
+
+[[output]]
+name = "fig_EagleBoys-Crust-diagrams"
+index = "figs/EagleBoys_Crust_diagrams.tikz"
+preamble = "_preamble_tikz.tex"
+type = "pdf"
+
+[[output]]
+name = "fig_EagleBoys-Topping-diagrams"
+index = "figs/EagleBoys_Topping_diagrams.tikz"
+preamble = "_preamble_tikz.tex"
+type = "pdf"
+
+[[output]]
+name = "fig_QQplot-dominos-crusts"
+index = "figs/QQplot_dominos_crusts.tikz"
+preamble = "_preamble_tikz.tex"
+type = "pdf"
+
+[[output]]
+name = "fig_QQplot-eagle-crusts"
+index = "figs/QQplot_eagle_crusts.tikz"
+preamble = "_preamble_tikz.tex"
+type = "pdf"
+
+[[output]]
+name = "fig_QQplot-stores"
+index = "figs/QQplot_stores.tikz"
+preamble = "_preamble_tikz.tex"
+type = "pdf"
+
+[[output]]
+name = "fig_Stores-Crust-diagrams"
+index = "figs/Stores_Crust_diagrams.tikz"
+preamble = "_preamble_tikz.tex"
+type = "pdf"
