@@ -15,18 +15,28 @@ The analysis includes:
 
 The project uses Julia for data analysis and generates diagrams comparing pizza sizes between the two chains.
 
+- Violin plots for Dominos pizzas
+
 ![Dominos-Crust-diagrams](https://github.com/kunzaatko/SME/releases/latest/download/fig_Dominos-Crust-diagrams.png)
 
 ![Dominos-Topping-diagrams](https://github.com/kunzaatko/SME/releases/latest/download/fig_Dominos-Topping-diagrams.png)
+
+- Violin plots for EagleBoys pizzas
 
 ![EagleBoys-Crust-diagrams](https://github.com/kunzaatko/SME/releases/latest/download/fig_EagleBoys-Crust-diagrams.png)
 
 ![EagleBoys-Topping-diagrams](https://github.com/kunzaatko/SME/releases/latest/download/fig_EagleBoys-Topping-diagrams.png)
 
+- QQ-plots for the crusts
+
 ![QQplot-dominos-crusts](https://github.com/kunzaatko/SME/releases/latest/download/fig_QQplot-dominos-crusts.png)
 
 ![QQplot-eagle-crusts](https://github.com/kunzaatko/SME/releases/latest/download/fig_QQplot-eagle-crusts.png)
 
+- QQ-plots for the stores
+
 ![QQplot-stores](https://github.com/kunzaatko/SME/releases/latest/download/fig_QQplot-stores.png)
+
+- Comparison of the diameter distributions 
 
 ![Stores-Crust-diagrams](https://github.com/kunzaatko/SME/releases/latest/download/fig_Stores-Crust-diagrams.png)
