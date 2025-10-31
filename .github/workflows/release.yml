@@ -1,0 +1,57 @@
+---
+name: "Create Tagged Release with PDF"
+on:
+  push:
+    tags:
+      - '**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/cache@v3
+        name: Tectonic Cache
+        with:
+          path: ~/.cache/Tectonic
+          key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
+          restore-keys: |
+           ${{ runner.os }}-tectonic-
+      - uses: wtfjoke/setup-tectonic@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          biber-version: '2.17'
+
+      - name: Build protocol
+        working-directory: report/
+        run: tectonic -X build
+
+      - name: Install ghostscript
+        run: sudo apt install ghostscript
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Change ImageMagick security policy
+        run: |
+          DQT='"'
+          SRC="rights=${DQT}none${DQT} pattern=${DQT}PDF${DQT}"
+          RPL="rights=${DQT}read|write${DQT} pattern=${DQT}PDF${DQT}"
+          sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
+
+      - name: Create PNGs from figures
+        run: | 
+          for i in report/build/fig_*/*.pdf; do
+            convert "$i" $(basename "$i" .pdf).png
+          done
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            report/build/*/*.pdf
+            *.png
+            LICENSE
