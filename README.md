@@ -5,7 +5,7 @@ a marketing campaign that Eagle Boys pizzas are larger than Dominos pizzas and t
 inches in diameter.
 
 The compiled PDF document is available in [releases](https://github.com/kunzaatko/SME/releases).
-This is the latest version of the [document](https://github.com/kunzaatko/SME/releases/latest/download/report.pdf).
+This is the latest version of the [document](https://github.com/kunzaatko/SME/releases/latest/download/protokol.pdf).
 
 The analysis includes:
 - Data preparation and cleaning
